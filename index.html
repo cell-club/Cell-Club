@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cell Club - نادي الخلية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- شريط وسائل التواصل الاجتماعي -->
+    <div class="social-bar">
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://instagram.com" class="social-icon" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com" class="social-icon" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://tiktok.com" class="social-icon" target="_blank">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- تأثيرات الخلفية الخيالية -->
+    <div class="magic-bg" id="magicBg"></div>
+    
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-seedling magic-icon"></i> Cell Club </h1>
+            <p>انضم إلى عالمنا الخيالي من المواهب والإبداع</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="main-content">
+            <!-- قسم التسجيل في الأعلى -->
+            <section class="registration-section">
+                <h2><i class="fas fa-scroll magic-icon"></i> نموذج التسجيل في النادي</h2>
+                <p>املأ النموذج أدناه للتقديم للانضمام إلى عالمنا الخيالي</p>
+                
+                <div class="success-message" id="successMessage">
+                    <i class="fas fa-check-circle"></i> تم تقديم طلبك بنجاح! تم إرسال رسالة تأكيد إلى بريدك الإلكتروني.
+                </div>
+                
+                <div class="error-message" id="errorMessage">
+                    <i class="fas fa-exclamation-circle"></i> حدث خطأ أثناء التسجيل. يرجى المحاولة مرة أخرى.
+                </div>
+                
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="firstName"><i class="fas fa-user magic-icon"></i> الاسم الشخصي:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lastName"><i class="fas fa-users magic-icon"></i> اللقب العائلي:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="specialization"><i class="fas fa-graduation-cap magic-icon"></i> التخصص:</label>
+                        <select id="specialization" name="specialization" required>
+                            <option value="">اختر تخصصك</option>
+                            <option value="علوم الحاسوب">علوم الحاسوب</option>
+                            <option value="الهندسة">الهندسة</option>
+                            <option value="الطب">الطب</option>
+                            <option value="الأعمال">الأعمال</option>
+                            <option value="الفنون">الفنون</option>
+                            <option value="التصميم">التصميم</option>
+                            <option value="العلوم">العلوم</option>
+                            <option value="آخر">آخر</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="talent"><i class="fas fa-dragon magic-icon"></i> الموهبة:</label>
+                        <select id="talent" name="talent" required>
+                            <option value="">اختر موهبتك</option>
+                            <option value="البرمجة">البرمجة</option>
+                            <option value="التصميم">التصميم</option>
+                            <option value="الكتابة">الكتابة</option>
+                            <option value="الموسيقى">الموسيقى</option>
+                            <option value="الرسم">الرسم</option>
+                            <option value="القيادة">القيادة</option>
+                            <option value="التخطيط">التخطيط</option>
+                            <option value="آخر">آخر</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reason"><i class="fas fa-question-circle magic-icon"></i> سبب الرغبة في دخول النادي:</label>
+                        <textarea id="reason" name="reason" placeholder="أخبرنا عن دوافعك للانضمام إلى عالمنا الخيالي..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="registrationNumber"><i class="fas fa-id-card magic-icon"></i> رقم التسجيل:</label>
+                        <input type="text" id="registrationNumber" name="registrationNumber" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone"><i class="fas fa-phone magic-icon"></i> رقم الهاتف:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope magic-icon"></i> البريد الإلكتروني الجامعي:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <button type="submit" class="btn" id="submitBtn">
+                        <i class="fas fa-paper-plane"></i> تقديم طلب الانضمام
+                    </button>
+                </form>
+            </section>
+            
+            <!-- قسم المعلومات في الأسفل -->
+            <section class="club-info">
+                <h2><i class="fas fa-magic magic-icon"></i> مرحباً بك في نادي Cell Club</h2>
+                <p>نادي Cell Club هو عالم خيالي يجمع المواهب الاستثنائية والمبدعين من مختلف التخصصات. نحن نخلق بيئة سحرية حيث تتحول الأفكار إلى واقع مذهل.</p>
+                
+                <h3><i class="fas fa-star magic-icon"></i> مميزات العضوية:</h3>
+                <ul>
+                    <li>فرص سحرية للتواصل مع محترفين في مجالك</li>
+                    <li>ورش عمل خيالية ودورات تدريبية متقدمة</li>
+                    <li>مشاريع تعاونية استثنائية مع أعضاء النادي</li>
+                    <li>تطوير المهارات الشخصية والمهنية بطرق إبداعية</li>
+                    <li>حضور فعاليات حصرية في أماكن خيالية</li>
+                </ul>
+                
+                <h3><i class="fas fa-gem magic-icon"></i> شروط العضوية:</h3>
+                <ul>
+                    <li>أن تكون طالباً أو خريجاً جامعياً</li>
+                    <li>الالتزام بقيم النادي وأهدافه السامية</li>
+                    <li>المشاركة الفعالة في أنشطة النادي السحرية</li>
+                    <li>الرغبة في الإبداع والتطوير المستمر</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p><i class="fas fa-copyright"></i> 2025 Cell Club - جميع الحقوق محفوظة </p>
+            <p> العالم الخيالي للمبدعين والموهوبين </p>
+        </div>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
