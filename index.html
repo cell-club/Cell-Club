@@ -36,43 +36,23 @@
                 
                 <form id="registrationForm">
                     <div class="form-group">
-                        <label for="firstName"><i class="fas fa-user magic-icon"></i> الاسم الشخصي:</label>
+                        <label for="firstName"><i class="fas fa-user magic-icon"></i> ماهو إسمك ؟ </label>
                         <input type="text" id="firstName" name="firstName" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="lastName"><i class="fas fa-users magic-icon"></i> اللقب العائلي:</label>
+                        <label for="lastName"><i class="fas fa-users magic-icon"></i> ماهو لقبك ؟ </label>
                         <input type="text" id="lastName" name="lastName" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="specialization"><i class="fas fa-graduation-cap magic-icon"></i> التخصص:</label>
-                        <select id="specialization" name="specialization" required>
-                            <option value="">اختر تخصصك</option>
-                            <option value="علوم الحاسوب">علوم الحاسوب</option>
-                            <option value="الهندسة">الهندسة</option>
-                            <option value="الطب">الطب</option>
-                            <option value="الأعمال">الأعمال</option>
-                            <option value="الفنون">الفنون</option>
-                            <option value="التصميم">التصميم</option>
-                            <option value="العلوم">العلوم</option>
-                            <option value="آخر">آخر</option>
-                        </select>
+                        <label for="reason"><i class="fas fa-question-circle magic-icon"></i> سبب الرغبة في دخول النادي:</label>
+                        <textarea id="reason" name="reason" placeholder="ما هو تخصصك ؟" required></textarea>
                     </div>
                     
-                    <div class="form-group">
-                        <label for="talent"><i class="fas fa-dragon magic-icon"></i> الموهبة:</label>
-                        <select id="talent" name="talent" required>
-                            <option value="">اختر موهبتك</option>
-                            <option value="البرمجة">البرمجة</option>
-                            <option value="التصميم">التصميم</option>
-                            <option value="الكتابة">الكتابة</option>
-                            <option value="الموسيقى">الموسيقى</option>
-                            <option value="الرسم">الرسم</option>
-                            <option value="القيادة">القيادة</option>
-                            <option value="التخطيط">التخطيط</option>
-                            <option value="آخر">آخر</option>
-                        </select>
+                   <div class="form-group">
+                        <label for="reason"><i class="fas fa-question-circle magic-icon"></i> سبب الرغبة في دخول النادي:</label>
+                        <textarea id="reason" name="reason" placeholder="ماهي موهبتك ؟" required></textarea>
                     </div>
                     
                     <div class="form-group">
@@ -81,17 +61,19 @@
                     </div>
                     
                     <div class="form-group">
-                        <label for="registrationNumber"><i class="fas fa-id-card magic-icon"></i> رقم التسجيل:</label>
+                        <label for="registrationNumber"><i class="fas fa-id-card magic-icon"></i> رقم التسجيل  :</label>
+                        <textarea id="reason" name="reason" placeholder=" مثلا : 222239012314 " required></textarea>
                         <input type="text" id="registrationNumber" name="registrationNumber" required>
                     </div>
                     
                     <div class="form-group">
                         <label for="phone"><i class="fas fa-phone magic-icon"></i> رقم الهاتف:</label>
+                        <textarea id="reason" name="reason" placeholder=" 0XXXXXXXXX " required></textarea>
                         <input type="tel" id="phone" name="phone" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="email"><i class="fas fa-envelope magic-icon"></i> البريد الإلكتروني الجامعي:</label>
+                        <label for="email"><i class="fas fa-envelope magic-icon"></i> بريدك الإلكتروني الشخصي أو الجامعي :</label>
                         <input type="email" id="email" name="email" required>
                     </div>
                     
@@ -161,4 +143,3 @@
     <script src="app.js"></script>
 </body>
 </html>
-
