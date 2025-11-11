@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cell Club</title>
+    <title>Cell Club - نادي الخلية</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
     
     <header>
         <div class="container">
-            <h1><i class="fas fa-seedling magic-icon"></i> Cell Club </h1>
+            <h1><i class="fas fa-seedling magic-icon"></i> Cell Club - نادي الخلية</h1>
             <p>انضم إلى عالمنا الخيالي من المواهب والإبداع</p>
         </div>
     </header>
@@ -36,23 +36,43 @@
                 
                 <form id="registrationForm">
                     <div class="form-group">
-                        <label for="firstName"><i class="fas fa-user magic-icon"></i> ماهو إسمك ؟ </label>
+                        <label for="firstName"><i class="fas fa-user magic-icon"></i> الاسم الشخصي:</label>
                         <input type="text" id="firstName" name="firstName" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="lastName"><i class="fas fa-users magic-icon"></i> ماهو لقبك ؟ </label>
+                        <label for="lastName"><i class="fas fa-users magic-icon"></i> اللقب العائلي:</label>
                         <input type="text" id="lastName" name="lastName" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="reason"><i class="fas fa-question-circle magic-icon"></i> سبب الرغبة في دخول النادي:</label>
-                        <textarea id="reason" name="reason" placeholder="ما هو تخصصك ؟" required></textarea>
+                        <label for="specialization"><i class="fas fa-graduation-cap magic-icon"></i> التخصص:</label>
+                        <select id="specialization" name="specialization" required>
+                            <option value="">اختر تخصصك</option>
+                            <option value="علوم الحاسوب">علوم الحاسوب</option>
+                            <option value="الهندسة">الهندسة</option>
+                            <option value="الطب">الطب</option>
+                            <option value="الأعمال">الأعمال</option>
+                            <option value="الفنون">الفنون</option>
+                            <option value="التصميم">التصميم</option>
+                            <option value="العلوم">العلوم</option>
+                            <option value="آخر">آخر</option>
+                        </select>
                     </div>
                     
-                   <div class="form-group">
-                        <label for="reason"><i class="fas fa-question-circle magic-icon"></i> سبب الرغبة في دخول النادي:</label>
-                        <textarea id="reason" name="reason" placeholder="ماهي موهبتك ؟" required></textarea>
+                    <div class="form-group">
+                        <label for="talent"><i class="fas fa-dragon magic-icon"></i> الموهبة:</label>
+                        <select id="talent" name="talent" required>
+                            <option value="">اختر موهبتك</option>
+                            <option value="البرمجة">البرمجة</option>
+                            <option value="التصميم">التصميم</option>
+                            <option value="الكتابة">الكتابة</option>
+                            <option value="الموسيقى">الموسيقى</option>
+                            <option value="الرسم">الرسم</option>
+                            <option value="القيادة">القيادة</option>
+                            <option value="التخطيط">التخطيط</option>
+                            <option value="آخر">آخر</option>
+                        </select>
                     </div>
                     
                     <div class="form-group">
@@ -61,19 +81,17 @@
                     </div>
                     
                     <div class="form-group">
-                        <label for="registrationNumber"><i class="fas fa-id-card magic-icon"></i> رقم التسجيل  :</label>
-                        <textarea id="reason" name="reason" placeholder=" مثلا : 222239012314 " required></textarea>
+                        <label for="registrationNumber"><i class="fas fa-id-card magic-icon"></i> رقم التسجيل:</label>
                         <input type="text" id="registrationNumber" name="registrationNumber" required>
                     </div>
                     
                     <div class="form-group">
                         <label for="phone"><i class="fas fa-phone magic-icon"></i> رقم الهاتف:</label>
-                        <textarea id="reason" name="reason" placeholder=" 0XXXXXXXXX " required></textarea>
                         <input type="tel" id="phone" name="phone" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="email"><i class="fas fa-envelope magic-icon"></i> بريدك الإلكتروني الشخصي أو الجامعي :</label>
+                        <label for="email"><i class="fas fa-envelope magic-icon"></i> البريد الإلكتروني الجامعي:</label>
                         <input type="email" id="email" name="email" required>
                     </div>
                     
@@ -131,7 +149,7 @@
     
     <footer>
         <div class="container">
-            <p><i class="fas fa-copyright"></i> 2025 Cell Club - جميع الحقوق محفوظة</p>
+            <p><i class="fas fa-copyright"></i> 2023 Cell Club - جميع الحقوق محفوظة</p>
             <p>العالم الخيالي للمبدعين والموهوبين</p>
         </div>
     </footer>
