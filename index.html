@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- تأثيرات الخلفية الخيالية -->
     <div class="magic-bg" id="magicBg"></div>
     
     <header>
@@ -21,7 +20,6 @@
     
     <div class="container">
         <div class="main-content">
-            <!-- قسم التسجيل في الأعلى -->
             <section class="registration-section">
                 <h2><i class="fas fa-scroll magic-icon"></i> نموذج التسجيل في النادي</h2>
                 <p>املأ النموذج أدناه للتقديم للانضمام إلى نادينا </p>
@@ -46,13 +44,13 @@
                     </div>
                     
                     <div class="form-group">
-                        <label for="reason"><i class="fas fa-question-circle magic-icon"></i> ماهو تخصصك ؟</label>
-                        <input id="reason" name="reason" required>
+                        <label for="major"><i class="fas fa-question-circle magic-icon"></i> ماهو تخصصك ؟</label>
+                        <input id="major" name="major" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="reason"><i class="fas fa-question-circle magic-icon"></i> ماهي موهبتك ؟</label>
-                        <input id="reason" name="reason" required>
+                        <label for="talent"><i class="fas fa-question-circle magic-icon"></i> ماهي موهبتك ؟</label>
+                        <input id="talent" name="talent" required>
                     </div>
                     
                     <div class="form-group">
@@ -61,7 +59,7 @@
                     </div>
                     
                     <div class="form-group">
-                        <label for="registrationNumber"><i class="fas fa-id-card magic-icon"></i>رقم التسجيل  ( تجده في بطاقة الطالب ) :</label>
+                        <label for="registrationNumber"><i class="fas fa-id-card magic-icon"></i> رقم التسجيل (تجده في بطاقة الطالب):</label>
                         <input type="text" id="registrationNumber" name="registrationNumber" placeholder="مثلا : 22223XXXXXXX" required>
                     </div>
                     
@@ -81,11 +79,9 @@
                 </form>
             </section>
             
-            <!-- قسم المعلومات في الأسفل -->
             <section class="club-info">
                 <h2><i class="fas fa-magic magic-icon"></i> مرحباً بك في نادي Cell Club</h2>
                 <p>نادي Cell Club هو عالم خيالي يجمع المواهب الاستثنائية والمبدعين من مختلف التخصصات. نحن نخلق بيئة سحرية حيث تتحول الأفكار إلى واقع مذهل.</p>
-                
                 <h3><i class="fas fa-star magic-icon"></i> مميزات العضوية:</h3>
                 <ul>
                     <li>فرص سحرية للتواصل مع محترفين في مجالك</li>
@@ -94,7 +90,6 @@
                     <li>تطوير المهارات الشخصية والمهنية بطرق إبداعية</li>
                     <li>حضور فعاليات حصرية في أماكن خيالية</li>
                 </ul>
-                
                 <h3><i class="fas fa-gem magic-icon"></i> شروط العضوية:</h3>
                 <ul>
                     <li>أن تكون طالباً أو خريجاً جامعياً</li>
@@ -106,7 +101,6 @@
         </div>
     </div>
 
-    <!-- قسم وسائل التواصل الاجتماعي في الأسفل -->
     <div class="social-section">
         <div class="container">
             <h3>تابعنا على وسائل التواصل الاجتماعي</h3>
@@ -129,12 +123,13 @@
             <p>شكرا لزيارتنا </p>
         </div>
     </footer>
-
-    <!-- Firebase SDK -->
+    <!-- Firebase (اختياري لو تستعمله) -->
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
     <script src="firebase-config.js"></script>
     <script src="app.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="emailjs.js"></script>
+
 </body>
 </html>
-
